@@ -1,0 +1,20 @@
+<div class="container" *ngIf="product">
+
+  <div class="left-column">
+    <img src="{{product.image}}" alt="product image">
+  </div>
+
+  <div class="right-column">
+    <div class="product-description">
+      <span>{{product.category}}</span>
+      <h1>{{product.title}}</h1>
+      <p>{{product.description}}</p>
+    </div>
+
+    <div class="product-price">
+      <span>{{product.price}}$</span>
+      <a href="#" class="cart-btn">Add to cart</a>
+    </div>
+
+  </div>
+</div>

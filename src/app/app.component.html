@@ -1,0 +1,10 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner" (click)="home()">
+  <img width="40" alt="Products Application" src="assets/product.jpg" />
+  <span>My Products Application</span>
+  <div class="spacer"></div>
+</div>
+<ng-container *ngIf="showLoader">
+  <i class="loading"></i>
+</ng-container>
+<router-outlet></router-outlet>
